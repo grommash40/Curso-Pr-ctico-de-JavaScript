@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de la altura de un triángulo</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Calcula la altura de cualquier triángulo Isosceles</h1>
+    </header>
+    <main class="main">
+        <section class="main__container">
+            <h2>En este sitio web podrás calcular la altura de un triángulo
+                isosceles, introduciendo los valores de la base y de los lados
+                adyacentes
+            </h2>
+            <form class="main__container--form" action="">
+                <label for="">
+                    Introduce el valor de la base del triángulo y de los 
+                    lados adyacentes
+                </label>
+                <input id="base" type="number" placeholder="Base...">
+                <input id="ladoAdyacente" type="number" placeholder="Lado Adyacente...">
+                <button type="button" onclick="calcularAltura()">
+                    Calcular la Altura del Triángulo
+                </button>
+            </form>
+            <section id="resultado">Altura:</section>
+        </section>
+    </main>
+    <script src="./isosceles.js"></script>
+</body>
+</html>

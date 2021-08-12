@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y Descuentos | Curso Práctico de JS</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header"> 
+        <h1>Porcentajes y Descuentos</h1>
+    </header>
+    <main class="main">
+        <section class="main__container">
+            <h2>Elige tu cupón de descuento y el precio de tu producto para poder saber el precio que debes pagar</h2>
+            <form class="form__container" action="">
+                <section class="form__container--price">
+                    <label for="InputPrice">Introduce el precio de tu producto</label>
+                    <input type="number" id="InputPrice">
+                </section>
+                
+                <section class="form__container--couponDiscount">
+                    <label for="InputCoupon">Elige tu cupón de descuento</label>
+                    <select name="Cupón de descuento" id="InputCoupon">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                        <option value="super_high">Super High</option>
+                    </select>
+                </section>
+
+                <section class="form__container--button">
+                    <button type="button" onclick="discountPrice()">
+                        Calcular Descuento
+                    </button>
+                </section>
+            </form>
+            <section class="result__container">
+                <p id="result">Tu descuento...</p>
+            </section>
+        </section>
+    </main>
+    <script src="descuentos.js"></script>
+</body>
+</html>
